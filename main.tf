@@ -36,7 +36,7 @@ module "ec2" {
 
   key_name = var.key_name
 
-  # 🔥 DB endpoint pass
+  # DB endpoint pass
   db_endpoint = module.rds.db_endpoint
 
   # IMPORTANT: ensure RDS ready before EC2
